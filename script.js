@@ -19,8 +19,9 @@ const dragOver = (event)=>{
     event.preventDefault()
 }
 
-const dragDrop = function(){
-    this.append(card)
+const dragDrop = ()=>{
+    event.target.append(card)
+    event.target.classList.remove('hovered')
 
 }   
 
